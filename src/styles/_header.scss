@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: center;
     min-height: 9rem;
-    @include gradiente($principal, $secundario);
+    @include gradiente1($principal, $secundario);
     color: $blanco;
 
     .iconos {
@@ -59,14 +59,14 @@ body {
     }
 }
 
-.cursos {
+.productos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    .curso{
-        .imagen-curso{
+    .producto{
+        .imagen-producto{
             width: 100%;
         }
 
@@ -79,19 +79,44 @@ body {
         @include tablet(){
             flex: 0 1 calc(50% - 1rem);
         }
-        
+
         @include desktop(){
             flex: 0 1 calc(33% - 1rem);
         }
 
-        .info-curso{
+        .info-producto{
             padding: 1rem;
         }
     }
 }
 
-#map {
-    width: 100%;
-    height: 400px;
-  }
+
+.sociales {
+    @include gradiente2($principal, $secundario);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    .social {
+        padding: 2rem;
+        
+    }
+
+    .icono-facebook {
+        img {
+            width: 1rem;
+        }
+    }
+    .icono-instagram {
+        img {
+            width: 1.5rem;
+        }
+    }
+    .icono-twitter {
+        img {
+            width: 1.5rem;
+        }
+    }
+
+}
 
