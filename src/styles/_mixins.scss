@@ -1,0 +1,93 @@
+//  Botones
+
+@mixin boton($color) {
+    background-color: $color;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    color: $blanco;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@mixin box-sizing($box-model) {
+    box-sizing: $box-model; 
+}
+
+/*-------------- Banner -------------------*/
+
+@mixin banner{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  // width: 100%;
+  position: relative;
+  color: white;
+  .contenido-hero{
+    position: absolute;
+    // top: 65%;
+    
+    // width: 100%;
+  }
+  img{
+    width: 100%;
+  }
+  span{
+    font-family: $fuente_principal;
+    font-size: 100px;
+    padding: .2rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 60px;
+    
+    
+  }
+  .sub-title{
+    text-align:right;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 30px;
+  }
+  
+  .boton{
+    @include boton($terciario);
+   }
+}
+
+/*-------------- Gradiente -------------------*/
+
+@mixin gradiente($color1, $color2){
+    background: linear-gradient(to right, $color1 30%, $color2 90%);
+}
+
+/*-------------- Media Queries -------------------*/
+
+// @mixin respond($breakpoint) {
+
+    // @if $breakpoint==telefono {
+    @mixin telefono{
+        @media only screen and (min-width: #{$telefono}){
+            @content;
+        }
+    }
+
+    // @if $breakpoint==tablet {
+    @mixin tablet{
+        @media only screen and (min-width: #{$tablet}){
+            @content;
+        }
+    }
+
+    // @if $breakpoint==desktop {
+        @mixin desktop{
+        @media only screen and (min-width: #{$desktop}){
+            @content;
+        }
+    }
+// }

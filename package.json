@@ -1,0 +1,39 @@
+{
+  "name": "repostelivery",
+  "version": "1.0.0",
+  "description": "Website Repostelivery",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && webpack --config webpack/webpack.config.js -p",
+    "start": "webpack-dev-server --config webpack/webpack.config.js -d"
+  },
+  "author": "Gonzalo Guerrero",
+  "license": "ISC",
+  "dependencies": {
+    "load-google-maps-api": "^2.0.2",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "animate.css": "^4.1.0",
+    "autoprefixer": "^9.8.6",
+    "copy-webpack-plugin": "^6.0.4",
+    "css-loader": "^4.2.2",
+    "file-loader": "^6.0.0",
+    "google-fonts-webpack-plugin": "^0.4.4",
+    "handlebars": "^4.7.6",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^4.4.1",
+    "image-webpack-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.10.0",
+    "postcss-loader": "^3.0.0",
+    "prettier": "2.1.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.1",
+    "style-loader": "^1.2.1",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-icons-installer": "^2.0.0"
+  }
+}
