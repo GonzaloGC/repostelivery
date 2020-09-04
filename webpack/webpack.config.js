@@ -22,16 +22,16 @@ module.exports = {
         'sass-loader'
         ],
       },
-      {
-        test: /\.(woff|woff2|eot|ttf|svg)$/,
-        exclude: /node_modules/,
-        loader: 'url-loader',
-        options: {
-          publicPath: './fonts/',
-          name: '../fonts/[name].[ext]',
-          limit: 1000
-        }
-      },
+      // {
+      //   test: /\.(woff|woff2|eot|ttf|svg)$/,
+      //   exclude: /node_modules/,
+      //   loader: 'url-loader',
+      //   options: {
+      //     publicPath: './fonts/',
+      //     name: '../fonts/[name].[ext]',
+      //     limit: 1000
+      //   }
+      // },
       {
         test: /\.(gif|png|jpeg|svg|jpg)$/i,
         use: [

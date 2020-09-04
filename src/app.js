@@ -1,3 +1,4 @@
+import "./map";
 import "./styles/main.scss";
 import "./static/img/logo.png";
 import "./static/img/estrellas.png";

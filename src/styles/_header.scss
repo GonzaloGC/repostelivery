@@ -15,7 +15,8 @@ body {
 //  ----------------------- Header--------------------------- 
 
 .hero {
-    @include gradiente-bg;
+    // @include gradiente-bg;
+
     @include banner;
 }
 
@@ -115,6 +116,10 @@ body {
 
 }
 
+#map {
+    width: 100%;
+    height: 400px;
+}
 
 .sociales {
     @include gradiente2($principal, $secundario);
