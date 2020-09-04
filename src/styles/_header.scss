@@ -15,6 +15,7 @@ body {
 //  ----------------------- Header--------------------------- 
 
 .hero {
+    @include gradiente-bg;
     @include banner;
 }
 
@@ -22,7 +23,8 @@ body {
     display: flex;
     justify-content: center;
     min-height: 9rem;
-    @include gradiente1($principal, $secundario);
+    // @include gradiente1($principal, $secundario);
+    @include gradiente-bg();
     color: $blanco;
 
     .iconos {
@@ -64,30 +66,53 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    
     .producto{
+        // display: flex;
+        // justify-content: center;
         .imagen-producto{
-            width: 100%;
+            width: auto;
+            height: auto;
+            max-width: 150px;
+            max-height: 150px;
+            margin-left: 8rem;
         }
-
+        // .imagen-producto2{
+        //     width: 50%;
+        // }
+        // .imagen-producto3{
+        //     width: 50%;
+        // }
+        // .imagen-producto4{
+        //     width: 50%;
+        // }
+        // .imagen-producto5{
+        //     width: 50%;
+        // }
+        // .imagen-producto6{
+        //     width: 100%;
+        // }
+        
         flex: 0 1 100%;
         // border: 1px solid $gris;
-
+        
         @include telefono(){
             flex: 0 1 100%;
         }
         @include tablet(){
             flex: 0 1 calc(50% - 1rem);
         }
-
+        
         @include desktop(){
             flex: 0 1 calc(33% - 1rem);
         }
 
         .info-producto{
+            
             padding: 1rem;
         }
     }
+
 }
 
 
