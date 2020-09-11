@@ -1,0 +1,35 @@
+//  ----------------------- Barra --------------------------- 
+
+.barra {
+    display: flex;
+    justify-content: center;
+    min-height: 9rem;
+    // @include gradiente1($principal, $secundario);
+    @include gradiente-bg();
+    color: $blanco;
+
+    .iconos {
+        display        : flex;
+        flex-direction : column;
+        flex           : 1;
+        margin-top     : 1.5rem;
+        
+
+        @include tablet(){
+            flex-direction: row;
+            flex: 1;
+        }
+
+        .icono{
+            flex: 1;
+            text-align: center;
+        }
+
+        img{
+            width: 2rem;
+            @include telefono(){
+                // float: right;
+            }
+        }
+    }
+}

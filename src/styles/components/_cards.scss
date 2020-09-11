@@ -1,0 +1,48 @@
+//  ----------------------- Cards --------------------------- 
+
+.titulo-cards {
+    h1{
+        padding: 2.5rem ;
+        text-align: center;
+        font-family: $fuente_principal;
+    }
+}
+
+.productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    .producto{
+        // display: flex;
+        // justify-content: center;
+        .imagen-producto{
+            width: auto;
+            height: auto;
+            max-width: 150px;
+            max-height: 150px;
+            margin-left: 8rem;
+        }
+        
+        flex: 0 1 100%;
+        // border: 1px solid $gris;
+        
+        @include telefono(){
+            flex: 0 1 100%;
+        }
+        @include tablet(){
+            flex: 0 1 calc(50% - 1rem);
+        }
+        
+        @include desktop(){
+            flex: 0 1 calc(33% - 1rem);
+        }
+
+        .info-producto{
+            
+            padding: 1rem;
+        }
+    }
+
+}

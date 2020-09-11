@@ -1,0 +1,44 @@
+//  ----------------------- Hero --------------------------- 
+
+.container-hero {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    .contenido-hero{
+        position: absolute;
+    }
+    .img-fondo{
+        width: 100%;
+    }
+    span{
+        font-family: $fuente_principal;
+        font-size: 100px;
+        padding: .2rem;
+        margin-top: 2rem;
+        margin-right: 1rem;
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 60px;
+    }
+    
+    .sub-title{
+        text-align:right;
+        font-size: 30px;
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+    
+    .boton{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 3.5rem;
+        a {
+        @include boton($terciario);
+        }
+    }
+}

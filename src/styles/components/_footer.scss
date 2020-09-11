@@ -1,0 +1,29 @@
+//  ----------------------- Footer --------------------------- 
+
+.footer {
+    @include gradiente2($principal, $secundario);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    .social {
+        padding: 2rem;
+        
+    }
+
+    .icono-facebook {
+        img {
+            width: 1rem;
+        }
+    }
+    .icono-instagram {
+        img {
+            width: 1.5rem;
+        }
+    }
+    .icono-twitter {
+        img {
+            width: 1.5rem;
+        }
+    }
+}
