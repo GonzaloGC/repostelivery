@@ -3,10 +3,53 @@
     margin-bottom: 0;
     padding-left: 0;
     list-style: none;
-    display: flex;
+}
+
+.main-item {
+    padding: 1rem;
 }
 
 .main-link {
-    color: $secundario;
+    color: $border-color;
     margin-left: 2rem;
+    font-family: $fuente_principal;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.main-nav {
+    position: fixed;
+    height: calc(100vh - #{$header-height});
+    width: 80vw;
+    background: $secundario;
+    opacity: .91;
+    top: $header-height;
+    right: -80vw;
+    transition: right .7s;
+    // transition: transform 2s ease-in-out;
+    padding-top: 1rem;
+
+    @include tablet(){
+        position: static;
+        background: transparent;
+        padding-top: 0;
+        height: auto;
+        width: auto; 
+    }
+
+    &.show {
+        right: 0;
+    }
+}
+
+.main-menu-burger {
+    $color-burger: black;
+    width: 2.4rem;
+    height: 1.8rem;
+    background: linear-gradient($color-burger 20%, transparent 20%, transparent 40%, $color-burger 40%, $color-burger 60%, transparent 60%, transparent 80%, $color-burger 80%);
+    cursor: pointer;
+
+    @include tablet(){
+        display: none;
+    }
 }

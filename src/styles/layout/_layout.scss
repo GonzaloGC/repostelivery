@@ -12,5 +12,41 @@
     align-items: center;
     margin-right: auto;
     margin-left: auto;
+
 }
 
+
+
+
+// body {
+//     .main-menu {
+//         @include telefono(){
+//             display: block;
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             background: $rojo;
+//             height: 100%;
+//         }
+//     }
+// }
+// .main-menu {
+//     @include telefono(){
+//         display: block;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         background: $rojo;
+//         height: 100%;
+//     }
+// }
+// .l-menu{
+//     @include tablet(){
+//         display: block;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         background: $rojo;
+//         height: 100%;
+//     }
+// }
