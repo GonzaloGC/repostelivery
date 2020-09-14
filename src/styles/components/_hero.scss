@@ -24,23 +24,39 @@
     }
 
     &__boton {
-        display: block;
-        // position: relative;
         @include boton($terciario);
-        margin-top: 2rem;
+        margin: 1.5rem;
+        // color: $blanco;
+    
+
+        &:hover {
+            // background: $blanco;
+            opacity: .5;
+            transition: 500ms;
+            color: $secundario;
+        }
+
+        
     }
 
     &__info-boton {
         color: $blanco;
-
-        &:hover {
-            color: yellow;
-
-        }
+        // &:hover {
+        //     color: $secundario;
+        // }
     }
+    
 }
 
+/* display: block;
+        position: relative;
+        @include boton($terciario);
+        margin-top: 2rem; */
 
+//     &:hover {
+    //         color: $secundario;
+    //     }
+    // }
 
 
 

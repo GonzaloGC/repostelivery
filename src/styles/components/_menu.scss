@@ -6,7 +6,7 @@
 
     @include tablet(){
         display: flex;
-        
+        right: -80vw;
     }
 }
 
@@ -48,7 +48,8 @@
         background: transparent;
         padding-top: 0;
         height: auto;
-        width: auto; 
+        width: auto;
+        
     }
 
 }

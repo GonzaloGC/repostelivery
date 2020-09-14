@@ -5,11 +5,16 @@
 
 @mixin boton($color) {
     background-color: $color;
-    border-radius: .5rem;
-    padding: .6rem 1rem;
-    margin: 0 32rem;
-    text-decoration: none;
-    text-transform: uppercase;
+    display: inline-block;
+    border: 1px solid;
+    padding: .5rem 2rem;
+    // color: $border-color;
+    border-radius: .25rem;
+
+    // padding: .6rem 1rem;
+    // margin: 0 32rem;
+    // text-decoration: none;
+    // text-transform: uppercase;
 }
 
 /*-------------- Banner -------------------*/
