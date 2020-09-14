@@ -5,12 +5,12 @@ document.querySelector('.main-menu-burger').addEventListener('click', ()=> {
 });
 
 
-// var showMenu = (burgerId,navId) => {
+// const showMenu = (burgerId,navId) => {
 //      const burger = document.getElementById(burgerId),
 //         nav = document.getElementById(navId)
 //     if(burger && nav) {
 //         burger.addEventListener('click', () => {
-//             nav.classList.burger('show')
+//             nav.classList.toggle('show')
 //         })
 //     }
 // }

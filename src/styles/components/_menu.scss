@@ -3,6 +3,11 @@
     margin-bottom: 0;
     padding-left: 0;
     list-style: none;
+
+    @include tablet(){
+        display: flex;
+        
+    }
 }
 
 .main-item {
@@ -15,6 +20,11 @@
     font-family: $fuente_principal;
     font-size: 1.5rem;
     font-weight: 700;
+
+    @include tablet(){
+        color: $secundario;
+        
+    }
 }
 
 .main-nav {
@@ -28,7 +38,11 @@
     transition: right .7s;
     // transition: transform 2s ease-in-out;
     padding-top: 1rem;
-
+    z-index: $z-fixed;
+    
+    &.show {
+        right: 0;
+    }
     @include tablet(){
         position: static;
         background: transparent;
@@ -37,19 +51,17 @@
         width: auto; 
     }
 
-    &.show {
-        right: 0;
-    }
 }
 
 .main-menu-burger {
     $color-burger: black;
-    width: 2.4rem;
-    height: 1.8rem;
+    width: 2rem;
+    height: 1.5rem;
     background: linear-gradient($color-burger 20%, transparent 20%, transparent 40%, $color-burger 40%, $color-burger 60%, transparent 60%, transparent 80%, $color-burger 80%);
     cursor: pointer;
 
     @include tablet(){
         display: none;
+        // z-index: 1
     }
 }

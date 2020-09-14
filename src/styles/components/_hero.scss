@@ -1,6 +1,50 @@
 //  ----------------------- Hero --------------------------- 
 
-.container-hero {
+.main-banner {
+    padding: 7rem 1rem 8rem;
+    // height: 15rem;
+    // width: 5;
+    // background: blue;
+    color: $blanco;
+    text-align: center;
+    position: relative;
+
+    &__content {
+        position: relative;
+    }
+
+    &__img {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         object-position: center;
+    }
+
+    &__boton {
+        display: block;
+        // position: relative;
+        @include boton($terciario);
+        margin-top: 2rem;
+    }
+
+    &__info-boton {
+        color: $blanco;
+
+        &:hover {
+            color: yellow;
+
+        }
+    }
+}
+
+
+
+
+
+/* .container-hero {
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-end;
@@ -41,4 +85,4 @@
         @include boton($terciario);
         }
     }
-}
+} */

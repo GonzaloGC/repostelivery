@@ -5,12 +5,9 @@
 
 @mixin boton($color) {
     background-color: $color;
-    padding: .5rem 1rem;
-    margin-top: 1rem;
-    width: 10rem;
-    display: flex;
-    justify-content: center;
-    color: $blanco;
+    border-radius: .5rem;
+    padding: .6rem 1rem;
+    margin: 0 32rem;
     text-decoration: none;
     text-transform: uppercase;
 }
