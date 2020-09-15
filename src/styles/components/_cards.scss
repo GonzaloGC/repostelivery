@@ -9,35 +9,18 @@
 .main-cards {
     display: grid;
     // height: 50vh;
-    grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-        grid-auto-flow: dense;
+    grid-template-columns: 50% 1fr ;
+    grid-template-rows: 50% 50%;
+    gap: 1rem;
 
-    // @include tablet() {
-    //     grid-template-columns: 50% 50%;
-    //     grid-template-rows: 50% 50%;
-    //     grid-auto-flow: dense;
-    // }
+
     @include desktop() {
-        grid-template-columns: 33.33% 33.33% 33.33%;
-        grid-template-rows: 33.33% 33.33% 33.33%;
-        grid-auto-flow: dense;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(2, 50%);
+        gap: 1rem;
+        // margin-top: 10rem;
     }
     
-    // flex-wrap: nowrap;
-    // flex-direction: row;
-    // justify-content: space-between;
-    // left: 0;
-    // padding: 2rem;
-
-    // @include tablet(){
-    //     display: flex;
-    //     flex-direction: row;
-    //     flex-wrap: wrap;
-    //     justify-content: space-between;
-    //     // flex-basis: 50%;
-    // }
-
     
     &__content {
         // border: 1.5px solid rgba(137, 43, 226, 0.281);
