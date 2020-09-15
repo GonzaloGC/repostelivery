@@ -1,51 +1,57 @@
 //  ----------------------- Hero --------------------------- 
 
 .main-banner {
-    padding: 7rem 1rem 8rem;
-    // height: 15rem;
-    // width: 5;
-    // background: blue;
+    // height: calc(100vh - #{$header-height});
+    // height: 800px;
+    padding: 6rem 1rem 11rem;
+    background: $secundario;
     color: $blanco;
     text-align: center;
     position: relative;
-
+    // font-size: $h1-font-size;
+    
     &__content {
         position: relative;
     }
 
     &__img {
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         object-fit: cover;
-         object-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        opacity: 0.5;
+
+        @include tablet
     }
-
-    &__boton {
-        @include boton($terciario);
-        margin: 1.5rem;
-        // color: $blanco;
+        
+    &__title {
+        font-size: $h1-font-size;
+    }
     
-
-        &:hover {
-            // background: $blanco;
-            opacity: .5;
-            transition: 500ms;
-            color: $secundario;
-        }
-
+    &__description {
+        font-size: $h2-font-size;
+        text-shadow: 2px 2px 4px #000000;
         
     }
-
-    &__info-boton {
-        color: $blanco;
-        // &:hover {
-        //     color: $secundario;
-        // }
-    }
     
+    .button {
+        @include boton($border-color);
+        background: $secundario transparent;
+        margin: 1.5rem;
+        color: $blanco;
+        // opacity: 0.3;
+        transition: color .6s ease-in-out;
+        // text-transform: uppercase;
+        
+        &:hover {
+            // background: $terciario;
+            color: $border-color;
+            transition: color .6s ease-in-out;
+        }
+    }
 }
 
 /* display: block;

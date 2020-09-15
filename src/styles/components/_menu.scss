@@ -6,7 +6,6 @@
 
     @include tablet(){
         display: flex;
-        right: -80vw;
     }
 }
 
@@ -15,14 +14,14 @@
 }
 
 .main-link {
-    color: $border-color;
+    color: $blanco;
     margin-left: 2rem;
     font-family: $fuente_principal;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
 
     @include tablet(){
-        color: $secundario;
+        color: $blanco;
         
     }
 }
@@ -55,9 +54,9 @@
 }
 
 .main-menu-burger {
-    $color-burger: black;
-    width: 2rem;
-    height: 1.5rem;
+    $color-burger: $blanco;
+    width: 1.5rem;
+    height: 1rem;
     background: linear-gradient($color-burger 20%, transparent 20%, transparent 40%, $color-burger 40%, $color-burger 60%, transparent 60%, transparent 80%, $color-burger 80%);
     cursor: pointer;
 

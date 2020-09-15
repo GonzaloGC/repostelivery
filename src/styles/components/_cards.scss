@@ -1,13 +1,59 @@
 //  ----------------------- Cards --------------------------- 
 
 .titulo-cards {
-    h1{
-        padding: 2.5rem ;
-        text-align: center;
-        font-family: $fuente_principal;
+    font-size: 1.5rem;
+    padding: 2.5rem ;
+    text-align: center;
+}
+
+.main-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+
+    
+    &__content {
+        border: 1.5px solid rgba(137, 43, 226, 0.281);
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        // padding-left: .5rem;
+        
+    }
+
+    &__imagen {
+        top: 0;
+        left: 0;
+        // width: 100%;
+        // height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__description {
+        padding-left: .5rem;
+    }
+
+    @include tablet(){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-basis: 50%;
     }
 }
 
+
+
+
+
+
+
+
+
+
+/* 
 .productos {
     display: flex;
     flex-direction: row;
@@ -45,4 +91,4 @@
         }
     }
 
-}
+} */
